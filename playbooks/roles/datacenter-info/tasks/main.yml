@@ -1,0 +1,7 @@
+---
+- name: collect cloud data center info
+  hcloud_datacenter_info:
+  register: output
+- name: show datacenter info
+  debug:
+    var: output
