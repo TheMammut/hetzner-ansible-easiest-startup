@@ -8,4 +8,5 @@
     - create-firewall-rules
     - create-basic-placement-group
     - create-server
+    - show-server-info
 
