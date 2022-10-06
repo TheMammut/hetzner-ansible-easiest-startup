@@ -1,0 +1,14 @@
+---
+- name: Create vm server
+  hcloud_server:
+    name: demo-host-vm
+    server_type: cpx11
+    image: ubuntu-22.04
+    location: fsn1
+    placement_group: my-demo-placement-group
+    ssh_keys:
+      - MSMacBook
+    firewalls:
+      - "{{ fw_ssh_result.hcloud_firewall.name }}"
+      - "{{ fw_ping_result.hcloud_firewall.name }}"
+    state: present
