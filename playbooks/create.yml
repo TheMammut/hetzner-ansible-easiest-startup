@@ -1,6 +1,8 @@
 ---
-- name: Create Hetzner Server
+- name: Create hetzner server
+  hosts: localhost
 
   roles:
     - datacenter-info
+    - show-sshkey-infos
 
