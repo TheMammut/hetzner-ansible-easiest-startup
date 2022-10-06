@@ -1,0 +1,9 @@
+---
+- name: Collect server info
+  hcloud_server_info:
+  register: output
+
+
+- name: Show server data
+  debug:
+    var: output.hcloud_server_info
