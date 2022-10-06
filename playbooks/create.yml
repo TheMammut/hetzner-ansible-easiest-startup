@@ -6,4 +6,6 @@
     - datacenter-info
     - show-sshkey-infos
     - create-firewall-rules
+    - create-basic-placement-group
+    - create-server
 
