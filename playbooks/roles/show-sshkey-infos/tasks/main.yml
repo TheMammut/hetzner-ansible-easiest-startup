@@ -1,0 +1,7 @@
+---
+- name: Collect hcloud ssh keys
+  hcloud_ssh_key_info:
+  register: output
+- name: Show ssh key infos
+  debug:
+    var: output.hcloud_ssh_key_info
