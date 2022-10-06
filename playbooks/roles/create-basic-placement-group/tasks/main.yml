@@ -1,0 +1,7 @@
+---
+- name: A basic placement group is created
+  hetzner.hcloud.hcloud_placement_group:
+    name: my-demo-placement-group
+    state: present
+    type: spread
+  register: placement_group
