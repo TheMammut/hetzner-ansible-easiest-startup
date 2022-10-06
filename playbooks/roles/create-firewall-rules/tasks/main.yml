@@ -1,0 +1,27 @@
+---
+- name: Ssh firewall rule
+  hetzner.hcloud.hcloud_firewall:
+    name: ssh-firewall
+    rules:
+      - direction: in
+        protocol: tcp
+        port: "22"
+        source_ips:
+          - 0.0.0.0/0
+          - ::/0
+        description: allow ssh in
+    state: present
+  register: fw_ssh_result
+
+- name: Ping firewall rule
+  hetzner.hcloud.hcloud_firewall:
+    name: ping-firewall
+    rules:
+      - direction: in
+        protocol: icmp
+        source_ips:
+          - 0.0.0.0/0
+          - ::/0
+        description: allow ping in
+    state: present
+  register: fw_ping_result

@@ -5,4 +5,5 @@
   roles:
     - datacenter-info
     - show-sshkey-infos
+    - create-firewall-rules
 
