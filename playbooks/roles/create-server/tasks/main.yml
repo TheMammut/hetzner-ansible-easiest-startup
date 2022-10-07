@@ -5,7 +5,7 @@
     server_type: cpx11
     image: ubuntu-22.04
     location: fsn1
-    placement_group: my-demo-placement-group
+    placement_group: "{{ placement_group.hcloud_placement_group.name }}"
     ssh_keys:
       - MSMacBook
     firewalls:
