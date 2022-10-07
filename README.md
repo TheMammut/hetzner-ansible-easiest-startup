@@ -26,7 +26,7 @@ pip install hcloud
 At Hetzner, an API token must be created for the secure connection. This must then be linked and used with the following
 command and deploy it. Is only valid as long as the terminal session.
 ```
-export HCLOUD_TOKEN="Der API-Key"
+export HCLOUD_TOKEN="The API-Key"
 ```
 
 ## Configuration
