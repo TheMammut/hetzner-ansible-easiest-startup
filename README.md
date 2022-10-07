@@ -1,12 +1,12 @@
 #Simple Hetzner API Ansible roles and scripts
 
-##Overview
+##Overview##
 
 My first attempt using ansible to manage, install and setup ubuntu 22.04 on a rented Cloud Server from http://hetzner.de using their Ansible Module (API).
 
-##Preparation
+##Preparation##
 
-###Brew
+###Brew###
 ```
 brew install git
 brew install ansible
@@ -14,7 +14,7 @@ ansible --version
 brew install hcloud
 ```
 
-### Python 
+### Python ###
 ```
 sudo easy_install pip
 pip install ansible
@@ -28,15 +28,15 @@ command and deploy it. Is only valid as long as the terminal session.
 export HCLOUD_TOKEN="Der API-Key"
 ```
 
-##Configuration
+##Configuration##
 
-### Checking the connection to Hetzner
+### Checking the connection to Hetzner###
 View a list of all available resources
 ```
 ansible-inventory -i inventories/hcloud/demo.hcloud.yml --list     
 ```
 
-###Set up the Hetzner environment with server, firewall and other settings
+###Set up the Hetzner environment with server, firewall and other settings###
 ```
 ansible-playbook playbooks/create.yml
 ```
